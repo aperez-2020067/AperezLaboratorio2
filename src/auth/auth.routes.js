@@ -26,7 +26,7 @@ api.post('/login', [loginValidator] , login)
 
 //Rutas privadas
                 //middleware
-api.get('/test', validateJwt, test)
+api.get('/test', [validateJwt] , test)
 
 //Exportar
 export default api

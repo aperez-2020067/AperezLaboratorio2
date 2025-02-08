@@ -34,7 +34,7 @@ api.put("/update/:id", [ validateJwt, //Solo accesan esi está logeado
     
     ], updateUser);
 
-api.put("/update-password/:id", newPasswordValidation, updatePassword);
+api.put("/update-password/:id", [newPasswordValidation], updatePassword);
 
 api.delete("/delete/:id", deleteUser);
 // Ruta para eliminar un usuario permanentemente
