@@ -1,0 +1,604 @@
+{
+	"info": {
+		"_postman_id": "6e422e29-f151-4f96-9d19-261e43c69d85",
+		"name": "Adopcion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37952067"
+	},
+	"item": [
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "VerTodosLosUsuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YmZlNmU4MzdmOTJmOTBhOWFjYjciLCJuYW1lIjoiU3VwZXJwYW4iLCJ1c2VybmFtZSI6Im1hemlubyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODIyOTIsImV4cCI6MTczODk5MzA5Mn0.d3QrJH_HXi-8haXpcNEgms37AZipbWO76DsmqMbDRYk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/asignarCurso",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"asignarCurso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YmZlNmU4MzdmOTJmOTBhOWFjYjciLCJuYW1lIjoiU3VwZXJwYW4iLCJ1c2VybmFtZSI6Im1hemlubyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODEzNjQsImV4cCI6MTczODk5MjE2NH0.hyowLLz1fSxV826hWtxcsomIcOTyXCDVg4C5jUsMQFI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3626/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerUsuarioPorId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YmZlNmU4MzdmOTJmOTBhOWFjYjciLCJuYW1lIjoiU3VwZXJwYW4iLCJ1c2VybmFtZSI6Im1hemlubyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODIyOTIsImV4cCI6MTczODk5MzA5Mn0.d3QrJH_HXi-8haXpcNEgms37AZipbWO76DsmqMbDRYk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/67a6bfdbe837f92f90a9acb4",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"67a6bfdbe837f92f90a9acb4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarFalse",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E1NjdhMjNjZGJjOTY3ZGEzYWRlYTUiLCJuYW1lIjoiRGFsYXMiLCJ1c2VybmFtZSI6ImxhY3JhcyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg4OTMyMjcsImV4cCI6MTczODkwNDAyN30.WqTk2qhwR88OaHvviqCv-n0bBLi4OB-rfliZ0CeUAuE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "currentPassword",
+									"value": "rwer4rsf@!@212das",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "newPassword",
+									"value": "rwer4rsf@!@212dasd",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/delete/67a6bf5ee837f92f90a9aca2",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"delete",
+								"67a6bf5ee837f92f90a9aca2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteDefinitive",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E1NjdhMjNjZGJjOTY3ZGEzYWRlYTUiLCJuYW1lIjoiRGFsYXMiLCJ1c2VybmFtZSI6ImxhY3JhcyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg4OTMyMjcsImV4cCI6MTczODkwNDAyN30.WqTk2qhwR88OaHvviqCv-n0bBLi4OB-rfliZ0CeUAuE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/delete-permanently/67a56719e82d84cde408b20d",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"delete-permanently",
+								"67a56719e82d84cde408b20d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarPassword",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E1NDc4MDEyOTg1NmEwMjI3NGQ3NDQiLCJuYW1lIjoiQWxhbiIsInVzZXJuYW1lIjoic3RvbXB5Iiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTczODg4OTM4MCwiZXhwIjoxNzM4OTAwMTgwfQ.T2kq0NA8nMq3WFX6HSdW4yTrthBjsL-GZk3GL1SxURs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "currentPassword",
+									"value": "rwer4rsf@!@212dasS",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "rwer4rsf@!@212Dasw",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/update-password/67a6bfbbe837f92f90a9acae",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"update-password",
+								"67a6bfbbe837f92f90a9acae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YmZlNmU4MzdmOTJmOTBhOWFjYjciLCJuYW1lIjoiU3VwZXJwYW4iLCJ1c2VybmFtZSI6Im1hemlubyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODEzNjQsImV4cCI6MTczODk5MjE2NH0.hyowLLz1fSxV826hWtxcsomIcOTyXCDVg4C5jUsMQFI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Alan",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Perez",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "lacras",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "stompy@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "2easWdxcsa$#@s",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "48333562",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/alanr/Downloads/Logo 100%.png"
+								},
+								{
+									"key": "role",
+									"value": "CLIENT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/user/update/67a6bfbbe837f92f90a9acae",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"update",
+								"67a6bfbbe837f92f90a9acae"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "RegistrarAnimal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lol",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Lodase",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Dog",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a6bf9be837f92f90a9aca8",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/animalregister",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"animalregister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodosAnimales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3626/animalall",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"animalall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3626/animal/67a6c132db4ca74279158983",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"animal",
+								"67a6c132db4ca74279158983"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "citas",
+			"item": [
+				{
+					"name": "RegistrarCita",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YmZlNmU4MzdmOTJmOTBhOWFjYjciLCJuYW1lIjoiU3VwZXJwYW4iLCJ1c2VybmFtZSI6Im1hemlubyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODIyOTIsImV4cCI6MTczODk5MzA5Mn0.d3QrJH_HXi-8haXpcNEgms37AZipbWO76DsmqMbDRYk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "animalId",
+									"value": "67a6cf07c8d4dd0dd73c2a22",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "67a54780129856a02274d744",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "date",
+									"value": "2025-02-10T12:00:00.000Z",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "esta ma lherido",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/cita",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"cita"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "todas las citas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3626/citaall",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"citaall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelarCita",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3626/cita/cancel/67a6c4da83860c24965111aa",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"cita",
+								"cancel",
+								"67a6c4da83860c24965111aa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Superpan",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Deus",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Marino",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "stompy@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "2easWdxcsa$#@s",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "48333561",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/alanr/Downloads/Logo 100%.png"
+								},
+								{
+									"key": "role",
+									"value": "CLIENT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "mazino",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "2easWdxcsa$#@s",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
